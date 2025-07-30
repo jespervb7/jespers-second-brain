@@ -1,28 +1,53 @@
+# Project information
 site_name: Jespers second brain
 site_url: https://sitename.example
+site_author: Jesper van Beemdelust
+site_description: >-
+  This website will contain a collection of knowledge articles, how-to's (SOPs) and other useful information that I want to keep track of.
+
 theme:
   features:
     - navigation.footer
+    - navigation.top
+    - navigation.path
+    - navigation.tabs 
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
   name: material
   logo: assets/logo.png
   palette:
-    # Dark Mode
-    - scheme: slate
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/weather-sunny
-        name: Dark mode
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: indigo
-      accent: deep purple
-
-    # Light Mode
-    - scheme: default
+      accent: indigo
       toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
 markdown_extensions:
+  - toc:
+        title: On this page
+        permalink: true
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -43,9 +68,44 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
+plugins:
+  - search
+  - tags:
+      PowerBI: PBI
+
 extra:
   social:
     - icon: simple/docusaurus
       link: https://youtube.com/@james-willett
     - icon: simple/docusaurus
       link: https://linkedin.com/in/willettjames
+
+nav:
+  - Home: index.md
+  - Guides: guides/guides.md
+  - SOPS: sops/sops.md
+  - Knowledge articles: knowledge/knowledge.md
+  - Snippets:
+    - snippets/snippets.md
+    - Power BI: snippets/Power BI.md
+    - TMDL scripts:
+      - snippets/tmdl/template semantic model.md
+      - snippets/tmdl/dim date.md
+    - Prompts:
+      - snippets/prompts/calculate-visual-sizes.md
+      - snippets/prompts/table-column descriptions.md
+    
+
+  - Ideas: ideas/ideas.md
+  - Errors: errors/errors.md
+  - Workflows: workflows/workflows.md
+  - Blog: blog/blog.md
+  - test:
+    - useful mkdocs things.md
+    - Section:
+      - test.md
+      - test page: test2.md
+    - Section 2: test1.md
+    - Section 3:
+      - test3.md
+  - About: about.md
