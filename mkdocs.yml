@@ -5,6 +5,10 @@ site_author: Jesper van Beemdelust
 site_description: >-
   This website will contain a collection of knowledge articles, how-to's (SOPs) and other useful information that I want to keep track of.
 
+# Repository
+repo_name: jespervb7/jespers-second-brain
+repo_url: https://github.com/jespervb7/jespers-second-brain
+
 theme:
   features:
     - navigation.footer
@@ -82,8 +86,12 @@ extra:
 
 nav:
   - Home: index.md
-  - Guides: guides/guides.md
-  - SOPS: sops/sops.md
+  - Guides:
+    - guides/guides.md
+    - guides/creating aliases for git.md
+  - SOPs:
+    - sops/sops.md
+    - sops/fresh pc installation.md
   - Knowledge articles: knowledge/knowledge.md
   - Snippets:
     - snippets/snippets.md
@@ -94,12 +102,15 @@ nav:
     - Prompts:
       - snippets/prompts/calculate-visual-sizes.md
       - snippets/prompts/table-column descriptions.md
+    - Templates:
+      - snippets/templates/SOPs.md
     
 
   - Ideas: ideas/ideas.md
   - Errors: errors/errors.md
   - Workflows: workflows/workflows.md
   - Blog: blog/blog.md
+  - Tags: tags.md
   - test:
     - useful mkdocs things.md
     - Section:

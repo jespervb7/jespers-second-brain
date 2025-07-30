@@ -1,3 +1,8 @@
+---
+tags:
+    - Power BI
+---
+
 # Semantic model table/column descriptions
 
 ```text

@@ -1,3 +1,8 @@
+---
+tags:
+    - Power BI
+---
+
 # Calculate the sizes visuals need to be on a page canvas.
 
 ```text
