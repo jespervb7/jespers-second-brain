@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://jespervb7.github.io/jespers-second-brain/
