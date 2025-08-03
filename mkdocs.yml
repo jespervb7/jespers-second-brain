@@ -80,8 +80,7 @@ markdown_extensions:
 plugins:
   - search
   - meta
-  - tags:
-      PowerBI: PBI
+  - tags
 
 extra:
   social:
@@ -99,10 +98,20 @@ nav:
   - SOPs:
     - sops/sops.md
     - sops/fresh pc installation.md
-  - Knowledge articles: knowledge/knowledge.md
+  - Knowledge articles:
+    - knowledge/Tabular Editor 2.md
+    - knowledge/Power BI.md
   - Snippets:
     - snippets/snippets.md
     - Power BI: snippets/Power BI.md
+    - Tabular Editor C# scripts:
+      - snippets/TA C# scripts/Create perspective editor.md
+      - snippets/TA C# scripts/generate mermaid diagram from model dax measures.md
+      - snippets/TA C# scripts/Copy measure expressions into description.md
+      - snippets/TA C# scripts/Generate documentation.md
+      - snippets/TA C# scripts/Create a sum measure for selected columns.md
+      - snippets/TA C# scripts/FAM - Format All Measures.md
+      - snippets/TA C# scripts/FAT - Format All Things.md
     - TMDL scripts:
       - snippets/tmdl/template semantic model.md
       - snippets/tmdl/dim date.md
@@ -119,6 +128,8 @@ nav:
   - Workflows: workflows/workflows.md
   - Blog: blog/blog.md
   - Tags: tags.md
+  - Other:
+    - resources.md
   - test:
     - useful mkdocs things.md
     - Section:
