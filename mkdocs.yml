@@ -81,6 +81,7 @@ plugins:
   - search
   - meta
   - tags
+  - glightbox
 
 extra:
   social:
@@ -98,9 +99,13 @@ nav:
   - SOPs:
     - sops/sops.md
     - sops/fresh pc installation.md
+    - sops/run schema compare with visual studio.md
   - Knowledge articles:
-    - knowledge/Tabular Editor 2.md
+    - Tabular Editor:
+      - knowledge/Tabular Editor.md
+      - knowledge/Tabular Editor 2.md
     - knowledge/Power BI.md
+    
   - Snippets:
     - snippets/snippets.md
     - Power BI: snippets/Power BI.md
@@ -124,6 +129,9 @@ nav:
 
   - Ideas:
     - ideas/semantic model styleguide.md
+    - ideas/Power BI yml pipeline for devops.md
+    - ideas/issuetree.md
+    - ideas/skill videos.md
   - Errors: errors/errors.md
   - Workflows: workflows/workflows.md
   - Blog: blog/blog.md
