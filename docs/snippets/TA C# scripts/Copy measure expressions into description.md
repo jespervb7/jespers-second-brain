@@ -1,6 +1,9 @@
 # Copy measure expression (DAX) into object description
 
 ```C# title="Adding expressions of measure to object description" linenums="1"
+
+Model.AllMeasures.FormatDax();
+
 foreach(var m in Model.AllMeasures)
 {
     if(m.Description == "")
@@ -24,6 +27,4 @@ foreach(var m in Model.AllMeasures)
         }
     }
 }
-
-Model.AllMeasures.FormatDax();
 ```
