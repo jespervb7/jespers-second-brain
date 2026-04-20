@@ -1,3 +1,4 @@
+```c#
 #r "System.Text.RegularExpressions"
 
 /*
@@ -68,3 +69,4 @@ foreach (var tbl in Model.Tables)
         }
     }
 }
+```
