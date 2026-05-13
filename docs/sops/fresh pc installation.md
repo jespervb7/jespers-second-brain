@@ -42,3 +42,25 @@ A clear, repeatable procedure for [brief purpose — e.g., publishing a Power BI
 ## 🔁 Related
 
 - [Link to related guide or troubleshooting tip]
+
+
+# TODOS
+
+- Tool settings
+  - VSCode
+  - SAS
+  - Power BI
+  - COPILOT
+- Bookmarks
+- DEsktop organisation
+- Tools to install
+  - Obsidian
+  - Git
+  - VSCode
+  - Power BI
+  - Tabular Editor
+  - Dax Studio
+  - ShareX/SNAGIT
+  - Nordpass/VPN
+  - M365
+- 
