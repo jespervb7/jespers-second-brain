@@ -1,0 +1,19 @@
+- 5 hour course https://www.youtube.com/watch?v=pQSMbRA3O6g
+  - Syllabus / topics covered:
+    - Power BI data modeling fundamentals
+    - Why data modeling matters for reporting and DAX
+    - Fact tables vs dimension tables
+    - Star schema vs snowflake schema vs galaxy schemas
+    - Relationships: one-to-many, many-to-many, active/inactive, cardinality
+    - Import vs DirectQuery vs live connection
+    - Power Query for shaping and preparing data
+    - Data cleaning, transformation, and model-ready data structures
+    - Date tables and time intelligence concepts
+    - Hierarchies and calendar-based analysis
+    - Measures vs calculated columns
+    - DAX basics: row context, filter context, and common functions
+    - Advanced DAX patterns for KPIs, comparisons, and calculations
+    - Performance tuning and model optimization best practices
+    - Semantic model design principles for scalability and maintainability
+    - Security and role-based access concepts in Power BI models
+    - Building reports and visuals on top of a well-structured model

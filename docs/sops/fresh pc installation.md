@@ -58,9 +58,13 @@ A clear, repeatable procedure for [brief purpose — e.g., publishing a Power BI
   - Git
   - VSCode
   - Power BI
-  - Tabular Editor
+  - Tabular Editor 2 and/or 3
+    - install BPA rules with C# macro.
   - Dax Studio
   - ShareX/SNAGIT
   - Nordpass/VPN
   - M365
-- 
+  - figma things (figjam)
+- AI things
+  - Designer GPT
+  - 

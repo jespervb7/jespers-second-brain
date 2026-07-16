@@ -1,17 +1,38 @@
-# Welcome to MkDocs
+# Jesper’s Second Brain
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to my personal documentation hub. This site collects practical guides, SOPs, knowledge notes, snippets, workflows, and ideas I want to keep handy.
 
-## Commands
+## What this site contains
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- **Guides**: Reference articles and workflows for tools, Git, and productivity.
+- **SOPs**: Step-by-step procedures for repeatable tasks like new PC setup and deployments.
+- **Knowledge articles**: Notes and concepts worth remembering.
+- **Snippets**: Reusable code, prompts, and templates I use often.
+- **Workflows**: Personal processes for planning, review, and execution.
+- **Blog**: A place for learning logs, retrospectives, and experiments.
+- **Errors**: Troubleshooting guides and recovery notes.
 
-## Project layout
+## Start here
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Guides](guides/guides.md)
+- [SOPs](sops/sops.md)
+- [Knowledge articles](knowledge/knowledge.md)
+- [Snippets](snippets/snippets.md)
+- [Workflows](workflows/workflows.md)
+- [Blog](blog/blog.md)
+- [Errors](errors/errors.md)
+- [Ideas](ideas/ideas.md)
+
+## Why I build this
+
+This site is a single place for the things I want to remember and reuse. It keeps me from repeating research and makes it easy to share useful processes with others.
+
+## Navigation tips
+
+- Use the sidebar to jump between sections.
+- Use search to find topics quickly.
+- Add new pages when you capture something worth keeping.
+
+---
+
+> “A second brain is not just storage; it is a system for turning knowledge into action.”
