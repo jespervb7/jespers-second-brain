@@ -33,7 +33,6 @@ LEFT JOIN sys.columns col
 ON col.object_id = tbl.object_id
 LEFT JOIN sys.schemas sch
 ON sch.schema_id = tbl.schema_id
-WHERE sch.schema_id = 6
 ORDER BY tbl.name, col.column_id
 ```
 
