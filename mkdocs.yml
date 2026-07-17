@@ -105,6 +105,8 @@ nav:
       - knowledge/Tabular Editor.md
       - knowledge/Tabular Editor 2.md
     - knowledge/Power BI.md
+    - Data Modelling:
+      - knowledge/Data Modelling Resources.md
     
   - Snippets:
     - snippets/snippets.md

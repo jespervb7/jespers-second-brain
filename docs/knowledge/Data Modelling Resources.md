@@ -1,4 +1,4 @@
-- 5 hour course https://www.youtube.com/watch?v=pQSMbRA3O6g
+- [5 hour long Youtube course](https://www.youtube.com/watch?v=pQSMbRA3O6g)
   - Syllabus / topics covered:
     - Power BI data modeling fundamentals
     - Why data modeling matters for reporting and DAX
