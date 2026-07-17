@@ -27,4 +27,6 @@ foreach(var m in Model.AllMeasures)
         }
     }
 }
+
+Model.AllMeasures.FormatDax();
 ```

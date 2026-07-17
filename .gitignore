@@ -15,6 +15,7 @@ venv
 *.userosscache
 *.sln.docstates
 *.env
+*.vscode
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -388,6 +389,7 @@ MSBuild_Logs/
 
 # Visual Studio History (VSHistory) files
 .vshistory/
+.vscode/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
