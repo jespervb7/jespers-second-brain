@@ -53,6 +53,11 @@ markdown_extensions:
         title: On this page
         permalink: true
   - attr_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -74,8 +79,9 @@ markdown_extensions:
 
 plugins:
   - search
-  - tags:
-      PowerBI: PBI
+  - meta
+  - tags
+  - glightbox
 
 extra:
   social:
@@ -89,13 +95,28 @@ nav:
   - Guides:
     - guides/guides.md
     - guides/creating aliases for git.md
+    - guides/Setup PBI trusted servers.md
   - SOPs:
     - sops/sops.md
     - sops/fresh pc installation.md
-  - Knowledge articles: knowledge/knowledge.md
+    - sops/run schema compare with visual studio.md
+  - Knowledge articles:
+    - Tabular Editor:
+      - knowledge/Tabular Editor.md
+      - knowledge/Tabular Editor 2.md
+    - knowledge/Power BI.md
+    
   - Snippets:
     - snippets/snippets.md
     - Power BI: snippets/Power BI.md
+    - Tabular Editor C# scripts:
+      - snippets/TA C# scripts/Create perspective editor.md
+      - snippets/TA C# scripts/generate mermaid diagram from model dax measures.md
+      - snippets/TA C# scripts/Copy measure expressions into description.md
+      - snippets/TA C# scripts/Generate documentation.md
+      - snippets/TA C# scripts/Create a sum measure for selected columns.md
+      - snippets/TA C# scripts/FAM - Format All Measures.md
+      - snippets/TA C# scripts/FAT - Format All Things.md
     - TMDL scripts:
       - snippets/tmdl/template semantic model.md
       - snippets/tmdl/dim date.md
@@ -106,11 +127,17 @@ nav:
       - snippets/templates/SOPs.md
     
 
-  - Ideas: ideas/ideas.md
+  - Ideas:
+    - ideas/semantic model styleguide.md
+    - ideas/Power BI yml pipeline for devops.md
+    - ideas/issuetree.md
+    - ideas/skill videos.md
   - Errors: errors/errors.md
   - Workflows: workflows/workflows.md
   - Blog: blog/blog.md
   - Tags: tags.md
+  - Other:
+    - resources.md
   - test:
     - useful mkdocs things.md
     - Section:

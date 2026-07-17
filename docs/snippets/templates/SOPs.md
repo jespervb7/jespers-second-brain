@@ -1,3 +1,6 @@
+# SOP template
+
+```
 # SOP: [Name of Task]
 
 **Last Updated:** YYYY-MM-DD  
@@ -42,3 +45,4 @@ A clear, repeatable procedure for [brief purpose — e.g., publishing a Power BI
 ## 🔁 Related
 
 - [Link to related guide or troubleshooting tip]
+```

@@ -1,6 +1,9 @@
 # Copy measure expression (DAX) into object description
 
 ```C# title="Adding expressions of measure to object description" linenums="1"
+
+Model.AllMeasures.FormatDax();
+
 foreach(var m in Model.AllMeasures)
 {
     if(m.Description == "")
@@ -13,6 +16,7 @@ foreach(var m in Model.AllMeasures)
     }
     else
     {
+        // '2021-07-05 / B.Agullo / reset expressions already added
         int pos = m.Description.IndexOf("Expression",0); 
         bool onlyExpression = (pos == 0);
         
