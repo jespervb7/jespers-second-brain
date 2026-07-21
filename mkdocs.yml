@@ -1,6 +1,6 @@
 # Project information
 site_name: Jespers second brain
-site_url: https://sitename.example
+site_url: https://jespervb7.github.io/jespers-second-brain/
 site_author: Jesper van Beemdelust
 site_description: >-
   This website will contain a collection of knowledge articles, how-to's (SOPs) and other useful information that I want to keep track of.
@@ -101,6 +101,7 @@ nav:
     - sops/fresh pc installation.md
     - sops/run schema compare with visual studio.md
   - Knowledge articles:
+    - knowledge/knowledge.md
     - Tabular Editor:
       - knowledge/Tabular Editor.md
       - knowledge/Tabular Editor 2.md
@@ -134,6 +135,7 @@ nav:
     
 
   - Ideas:
+    - ideas/ideas.md
     - ideas/semantic model styleguide.md
     - ideas/Power BI yml pipeline for devops.md
     - ideas/issuetree.md
@@ -144,12 +146,5 @@ nav:
   - Tags: tags.md
   - Other:
     - resources.md
-  - test:
     - useful mkdocs things.md
-    - Section:
-      - test.md
-      - test page: test2.md
-    - Section 2: test1.md
-    - Section 3:
-      - test3.md
   - About: about.md

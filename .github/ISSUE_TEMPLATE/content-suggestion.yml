@@ -1,0 +1,30 @@
+name: Content suggestion
+description: Suggest a new guide, SOP, knowledge article, or snippet to add.
+labels: ["suggestion"]
+body:
+  - type: textarea
+    id: topic
+    attributes:
+      label: Topic
+      description: What should be documented?
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Where do you think this fits? (see mkdocs.yml nav for the existing structure)
+      options:
+        - Guide
+        - SOP
+        - Knowledge article
+        - Snippet
+        - Idea / not sure
+    validations:
+      required: false
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this would be useful
+    validations:
+      required: false

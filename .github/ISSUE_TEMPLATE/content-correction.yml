@@ -1,0 +1,26 @@
+name: Content correction
+description: Report a typo, broken link, outdated info, or factual error in the docs.
+labels: ["correction"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Link or path to the affected page (e.g. docs/sops/fresh pc installation.md)
+      placeholder: docs/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong
+      description: What's incorrect, outdated, or broken?
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix
+      description: If you know the correct info/link, put it here (optional).
+    validations:
+      required: false
