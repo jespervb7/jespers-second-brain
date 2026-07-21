@@ -1,4 +1,4 @@
-```SQL
+```SQL title="Show all views with columns" linenums="1"
 SELECT
 		sch.name							AS schema_name
 	,	vw.schema_id						AS schema_id
@@ -17,7 +17,7 @@ ON sch.schema_id = vw.schema_id
 ORDER BY vw.name, col.column_id
 ```
 
-```SQL
+```SQL title="Show all tables with columns" linenums="1"
 SELECT
 		sch.name							AS schema_name
 	,	tbl.schema_id						AS schema_id

@@ -110,6 +110,10 @@ nav:
     
   - Snippets:
     - snippets/snippets.md
+    - SQL:
+      - snippets/SQL/Show all columns in a database.md
+      - snippets/SQL/Show all grants for all users.md
+      - snippets/SQL/Check NULL percentage.md
     - Power BI: snippets/Power BI.md
     - Tabular Editor C# scripts:
       - snippets/TA C# scripts/Create perspective editor.md
