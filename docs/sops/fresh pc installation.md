@@ -52,7 +52,8 @@
   - COPILOT
 - Bookmarks
 - DEsktop organisation
-- Tools to install
+- Tools to install or bookmark
+  - [Vibe schema](https://vibe-schema.com/star-schema-creator)
   - Obsidian
   - Git
   - VSCode
