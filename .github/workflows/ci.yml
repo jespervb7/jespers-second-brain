@@ -1,29 +1,31 @@
-name: ci
+name: Documentation CI check
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+  workflow_call:
+    inputs:
+      upload_pages_artifact:
+        description: Upload the built site for GitHub Pages deployment
+        type: boolean
+        default: false
 permissions:
-  contents: write
+  contents: read
 jobs:
-  deploy:
+  build:
+    name: Build documentation website
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: astral-sh/setup-uv@v3
+      - uses: astral-sh/setup-uv@v6
         with:
           python-version: "3.13"
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
       - run: uv sync --locked
-      - run: uv run mkdocs build --strict
-      - run: uv run mkdocs gh-deploy --force
+      - run: uv run --locked zensical build --clean --strict
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ inputs.upload_pages_artifact }}
+        with:
+          path: site

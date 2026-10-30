@@ -1,0 +1,149 @@
+[project]
+site_name = "Jespers second brain"
+site_url = "https://jespervb7.github.io/jespers-second-brain/"
+site_author = "Jesper van Beemdelust"
+site_description = "This website will contain a collection of knowledge articles, how-to's (SOPs) and other useful information that I want to keep track of."
+repo_name = "jespervb7/jespers-second-brain"
+repo_url = "https://github.com/jespervb7/jespers-second-brain"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Guides" = [
+    "guides/guides.md",
+    "guides/creating aliases for git.md",
+    "guides/Setup PBI trusted servers.md",
+  ] },
+  { "SOPs" = [
+    "sops/sops.md",
+    "sops/fresh pc installation.md",
+    "sops/run schema compare with visual studio.md",
+  ] },
+  { "Knowledge articles" = [
+    "knowledge/knowledge.md",
+    { "Tabular Editor" = [
+      "knowledge/Tabular Editor.md",
+      "knowledge/Tabular Editor 2.md",
+    ] },
+    "knowledge/Power BI.md",
+    { "Data Modelling" = ["knowledge/Data Modelling Resources.md"] },
+  ] },
+  { "Snippets" = [
+    "snippets/snippets.md",
+    { "SQL" = [
+      "snippets/SQL/Show all columns in a database.md",
+      "snippets/SQL/Show all grants for all users.md",
+      "snippets/SQL/Check NULL percentage.md",
+    ] },
+    { "Power BI" = "snippets/Power BI.md" },
+    { "Tabular Editor C# scripts" = [
+      "snippets/TA C# scripts/Create perspective editor.md",
+      "snippets/TA C# scripts/generate mermaid diagram from model dax measures.md",
+      "snippets/TA C# scripts/Copy measure expressions into description.md",
+      "snippets/TA C# scripts/Generate documentation.md",
+      "snippets/TA C# scripts/Create a sum measure for selected columns.md",
+      "snippets/TA C# scripts/FAM - Format All Measures.md",
+      "snippets/TA C# scripts/FAT - Format All Things.md",
+    ] },
+    { "TMDL scripts" = [
+      "snippets/tmdl/template semantic model.md",
+      "snippets/tmdl/dim date.md",
+    ] },
+    { "Prompts" = [
+      "snippets/prompts/calculate-visual-sizes.md",
+      "snippets/prompts/table-column descriptions.md",
+    ] },
+    { "Templates" = ["snippets/templates/SOPs.md"] },
+  ] },
+  { "Ideas" = [
+    "ideas/ideas.md",
+    "ideas/semantic model styleguide.md",
+    "ideas/Power BI yml pipeline for devops.md",
+    "ideas/issuetree.md",
+    "ideas/skill videos.md",
+  ] },
+  { "Errors" = "errors/errors.md" },
+  { "Workflows" = "workflows/workflows.md" },
+  { "Blog" = "blog/blog.md" },
+  { "Tags" = "tags.md" },
+  { "Other" = ["resources.md", "useful mkdocs things.md"] },
+  { "About" = "about.md" },
+]
+
+[project.theme]
+variant = "classic"
+logo = "assets/logo.png"
+favicon = "assets/favicon.png"
+features = [
+  "navigation.footer",
+  "navigation.top",
+  "navigation.path",
+  "navigation.tabs",
+  "toc.follow",
+  "search.suggest",
+  "search.highlight",
+  "content.code.copy",
+]
+
+[project.theme.font]
+text = "Roboto"
+code = "Roboto Mono"
+
+[project.theme.icon]
+logo = "logo"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "material/toggle-switch"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "indigo"
+accent = "indigo"
+toggle.icon = "material/toggle-switch"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "black"
+accent = "indigo"
+toggle.icon = "material/toggle-switch-off"
+toggle.name = "Switch to system preference"
+
+[project.markdown_extensions]
+toc.title = "On this page"
+toc.permalink = true
+attr_list = {}
+pymdownx.critic = {}
+pymdownx.caret = {}
+pymdownx.keys = {}
+pymdownx.mark = {}
+pymdownx.tilde = {}
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.snippets = {}
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true
+admonition = {}
+pymdownx.details = {}
+
+[project.plugins.search]
+[project.plugins.meta]
+[project.plugins.tags]
+[project.plugins.glightbox]
+
+[[project.extra.social]]
+icon = "simple/docusaurus"
+link = "https://youtube.com/@james-willett"
+
+[[project.extra.social]]
+icon = "simple/docusaurus"
+link = "https://linkedin.com/in/willettjames"
