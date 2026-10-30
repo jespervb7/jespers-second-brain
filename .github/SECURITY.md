@@ -1,10 +1,10 @@
 # Security Policy
 
-This repository publishes a static documentation site (MkDocs + Material, deployed to GitHub Pages). It has no backend, no user accounts, no forms, and doesn't collect visitor data — so the realistic attack surface is narrow. Relevant reports still welcome:
+This repository publishes a static documentation site (Zensical, deployed to GitHub Pages). It has no backend, no user accounts, no forms, and doesn't collect visitor data — so the realistic attack surface is narrow. Relevant reports still welcome:
 
-- A vulnerable dependency pinned in `pyproject.toml` / `uv.lock` (e.g. a CVE in `mkdocs-material` or `mkdocs-glightbox`)
+- A vulnerable dependency pinned in `pyproject.toml` / `uv.lock` (e.g. a CVE in `zensical`)
 - A secret, credential, or token accidentally committed to the repo history
-- A GitHub Actions workflow (`.github/workflows/`) that could be abused to run untrusted code or exfiltrate the `contents: write` token used for `gh-deploy`
+- A GitHub Actions workflow (`.github/workflows/`) that could be abused to run untrusted code or misuse the manual deploy job's `pages: write` and `id-token: write` permissions
 - Content injected into the published site that wasn't authored here (e.g. via a compromised dependency at build time)
 
 ## Reporting

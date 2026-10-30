@@ -11,7 +11,7 @@ That said, corrections are genuinely welcome:
 ## If you're sending a PR
 
 - Keep it small and scoped to one fix/addition.
-- Follow the existing conventions in [copilot-instructions.md](copilot-instructions.md): pages live under `docs/<category>/`, filenames use natural space-separated title case, and every new page must be added to `nav:` in `mkdocs.yml` or it won't appear on the site.
-- No build/test suite is required to pass beyond the site building cleanly — verify locally with `uv run mkdocs build --strict` before opening the PR.
+- Follow the existing conventions in [copilot-instructions.md](copilot-instructions.md): pages live under `docs/<category>/`, filenames use natural space-separated title case, and every new page must be added to `project.nav` in `zensical.toml` or it won't appear on the site.
+- No build/test suite is required to pass beyond the site building cleanly — verify locally with `uv run zensical build --clean --strict` before opening the PR.
 
 There's no formal review SLA — this repo has one maintainer, so expect turnaround to vary.

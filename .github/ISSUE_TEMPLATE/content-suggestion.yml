@@ -13,7 +13,7 @@ body:
     id: category
     attributes:
       label: Category
-      description: Where do you think this fits? (see mkdocs.yml nav for the existing structure)
+      description: Where do you think this fits? (see zensical.toml nav for the existing structure)
       options:
         - Guide
         - SOP

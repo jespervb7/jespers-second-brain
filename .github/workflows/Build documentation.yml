@@ -1,0 +1,33 @@
+name: Build documentation - CI Check
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_call:
+    inputs:
+      upload_pages_artifact:
+        description: Upload the built site for GitHub Pages deployment
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  build:
+    name: Build documentation website
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.13"
+      - name: Install dependencies with uv
+        run: uv sync --locked
+      - name: Build Zensical documentation
+        run: uv run --locked zensical build --clean --strict
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ inputs.upload_pages_artifact }}
+        with:
+          path: site
