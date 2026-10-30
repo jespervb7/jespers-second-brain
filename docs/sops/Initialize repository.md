@@ -1,6 +1,10 @@
 # Purpose
 
-The purpose of this document is to outline the onboarding proces for a new repository.
+The purpose of this document is to outline the onboarding proces for a new repository. It gives a description of steps to take regarding the following: 
+
+## README.MD
+
+Every reposutiry shiykd
 
 ## TODO
 
@@ -9,4 +13,4 @@ The purpose of this document is to outline the onboarding proces for a new repos
 - Contributing.md
 - Licenses
 - CODEOWNERS.MD
--Github issue templates
+- Github issue templates

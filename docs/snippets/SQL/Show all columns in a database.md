@@ -36,7 +36,7 @@ ON sch.schema_id = tbl.schema_id
 ORDER BY tbl.name, col.column_id
 ```
 
-```SQL
+```SQL title="Show all granted permisions on SQL objects" linenums="1"
 SELECT
     class_desc
   , CASE WHEN class = 0 THEN DB_NAME()
