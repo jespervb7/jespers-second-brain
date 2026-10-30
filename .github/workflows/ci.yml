@@ -1,4 +1,4 @@
-name: Documentation CI check
+name: Zensical build CI
 on:
   push:
     branches:
@@ -23,8 +23,10 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           python-version: "3.13"
-      - run: uv sync --locked
-      - run: uv run --locked zensical build --clean --strict
+      - name: Install dependencies with uv
+        run: uv sync --locked
+      - name: Build Zensical documentation
+        run: uv run --locked zensical build --clean --strict
       - uses: actions/upload-pages-artifact@v3
         if: ${{ inputs.upload_pages_artifact }}
         with:
