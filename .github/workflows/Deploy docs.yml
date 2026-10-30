@@ -16,7 +16,7 @@ concurrency:
 jobs:
   build:
     name: Build documentation
-    uses: ./.github/workflows/ci.yml
+    uses: ./.github/workflows/CI Documentation.yml
     with:
       upload_pages_artifact: true
 
