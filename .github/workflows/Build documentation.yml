@@ -1,4 +1,4 @@
-name: Zensical build CI
+name: Build documentation - CI Check
 on:
   push:
     branches:
