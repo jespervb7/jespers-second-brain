@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "docs/**"
+      - ".github/workflows/Build documentation.yml"
+      - ".github/workflows/Deploy docs.yml"
+      - "pyproject.toml"
+      - "zensical.toml"
   workflow_dispatch:
 
 permissions:
