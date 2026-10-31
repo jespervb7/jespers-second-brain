@@ -32,21 +32,21 @@ Users now need to setup a local variabele on their machine to make this work aga
 
 ![Maak nieuwe variabele](../assets/PBI_SQL_TRUSTED_SERVERS/Create_new_variable.png)
 
-```
+```plaintext
 PBI_SQL_TRUSTED_SERVERS
 ```
 
 ==and the values==
 
-```
+```text
 *server1*, *server2*, *server3*, *server4*
 ```
+
 ![Invulling variabele](../assets/PBI_SQL_TRUSTED_SERVERS/input_new_variable.png)
 
 !!! info "Note"
 
     Make sure to add all possible database servers you have. This does not mean the individual databases, but the actual server you would connect to in SSMS.
-
 
 ==Restart your computer once these changes have been made==
 
